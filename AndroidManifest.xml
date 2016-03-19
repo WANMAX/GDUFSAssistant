@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ace.gdufsassistant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	
+	<uses-permission android:name="android.permission.GET_TASKS" /> 
+	
+	<permission android:name="android.permission.STATUS_BAR_SERVICE" android:protectionLevel="signature" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ace.gdufsassistant.interfacing.main.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.personal.center.UserInformationActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.personal.center.SettingActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.personal.center.AdviseActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.personal.center.AboutActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.WebViewActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.learning.NewsActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.learning.AnnouncementActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.learning.ScoreActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.learning.CETScoreActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.living.WeatherActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.living.YKTActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.living.RechargeActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.living.TodayAccountActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.living.HistoryAccountActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.living.ReportLossActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.living.ModifyPasswordActivity"/>
+        <activity android:name="com.ace.gdufsassistant.interfacing.specific.module.CourseEditor"/>
+	    <receiver android:name="com.ace.gdufsassistant.interfacing.specific.module.CourseDesktop" 
+	        android:label="@string/app_name">
+		    <intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+		    </intent-filter>
+		    <meta-data android:name="android.appwidget.provider"
+		        android:resource="@xml/course_appwidget_info" />
+		</receiver>
+    </application>
+
+</manifest>

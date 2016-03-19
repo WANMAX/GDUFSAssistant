@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="startUserInformationActivity"
+        style="@style/button">
+        <ImageView android:id="@+id/photo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="6dip"
+	        android:src="@drawable/not_logged_photo"/>
+	    <LinearLayout
+		    android:layout_width="0dip"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:orientation="vertical">
+		    <TextView android:id="@+id/name"
+		        android:layout_height="0dip"
+		        android:layout_weight="2"
+		        android:textSize="20sp"
+		        android:gravity="left|center_vertical"
+		        android:layout_width="match_parent"
+		        android:text="@string/not_logged2"/>
+		    <TextView android:id="@+id/student_number"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dip"
+		        android:layout_weight="1"
+		        android:textSize="15sp"
+		        android:gravity="left|center_vertical"
+		        android:text="@string/student_number"/>
+	    </LinearLayout>
+	</LinearLayout>
+    <Button style="@style/vertical_interval"/>
+	<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    <Button android:id="@+id/option"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/option"
+		        android:onClick="startSettingActivity"
+			    style="@style/top_button"
+		        />
+		    <Button android:id="@+id/about"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/about"
+		        android:onClick="startAboutActivity"
+			    style="@style/bottom_button"
+		        />
+		    <Button style="@style/vertical_interval"/>
+		    <Button android:id="@+id/close"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/close"
+		        android:onClick="exit"
+			    style="@style/button"
+		        />
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

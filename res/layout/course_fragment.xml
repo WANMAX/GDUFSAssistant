@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/first_empty"
+            style="@style/course_table_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_table"
+            android:text="@string/empty" />
+
+        <TextView
+            style="@style/course_table_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_table"
+            android:text="@string/mon" />
+
+        <TextView
+            style="@style/course_table_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_table"
+            android:text="@string/tue" />
+
+        <TextView
+            style="@style/course_table_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_table"
+            android:text="@string/wen" />
+
+        <TextView
+            style="@style/course_table_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_table"
+            android:text="@string/thu" />
+
+        <TextView
+            style="@style/course_table_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_table"
+            android:text="@string/fri" />
+
+        <TextView
+            style="@style/course_table_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_table"
+            android:text="@string/sta" />
+
+        <TextView
+            style="@style/course_table_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_table_last_colum"
+            android:text="@string/sun" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+            <GridLayout android:id="@+id/course_grid"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:rowCount="15"
+                android:columnCount="8"
+                android:background="@drawable/course_bg">
+            </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

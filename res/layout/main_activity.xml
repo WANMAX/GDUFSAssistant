@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+    <com.ace.gdufsassistant.util.myView.MyViewPager
+        android:id="@+id/fragment_root"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" 
+        android:flipInterval="10"
+        android:persistentDrawingCache="animation"
+        />
+    
+    <RadioGroup
+        android:id="@+id/bottomList"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+		android:background="@drawable/button_group_bg"
+        >
+	        <RadioButton
+	            android:id="@+id/button_courses"
+	            android:drawableTop="@drawable/button_course"
+	            style="@style/radio_button_style"
+	            android:text="@string/course" 
+	            android:checked="true"/>
+	        <RadioButton
+	            android:id="@+id/button_learning"
+	            android:drawableTop="@drawable/button_learning"
+	            style="@style/radio_button_style"
+	            android:text="@string/learning"/>
+	        <RadioButton
+	            android:id="@+id/button_living"
+	            android:drawableTop="@drawable/button_living"
+	            style="@style/radio_button_style"
+	            android:text="@string/living"/>
+	        <RadioButton
+	            android:id="@+id/button_personal_center"
+	            android:drawableTop="@drawable/button_user"
+	            style="@style/radio_button_style"
+	            android:text="@string/personal_center"/>
+    </RadioGroup>
+
+
+</LinearLayout>

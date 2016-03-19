@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/top_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tag_name"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/tag_value" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/center_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tag_name"
+                    android:text="@string/student_number" />
+
+                <TextView
+                    android:id="@+id/student_number"
+                    style="@style/tag_value" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/center_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tag_name"
+                    android:text="@string/ykt_number" />
+
+                <TextView
+                    android:id="@+id/ykt_number"
+                    style="@style/tag_value" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/center_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tag_name"
+                    android:text="@string/balance" />
+
+                <TextView
+                    android:id="@+id/balance"
+                    style="@style/tag_value" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/center_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tag_name"
+                    android:text="@string/transition_balance" />
+
+                <TextView
+                    android:id="@+id/transition_balance"
+                    style="@style/tag_value" />
+            </LinearLayout>
+            
+            <LinearLayout
+                style="@style/bottom_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tag_name"
+                    android:text="@string/state" />
+
+                <TextView
+                    android:id="@+id/state"
+                    style="@style/tag_value" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button style="@style/vertical_interval" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/tag_name"
+            android:text="@string/money" />
+
+        <EditText
+            android:id="@+id/money"
+            style="@style/tag_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/tag_name"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/tag_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recharge"
+            android:text="@string/apply" />
+
+        <Button
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cancel"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>
