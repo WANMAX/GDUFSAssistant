@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+		<Button android:id="@+id/weather"
+		    android:text="@string/weather"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:onClick="showWeatherActivity"
+		    style="@style/button"/>
+		<Button android:id="@+id/YKT"
+		    android:text="@string/YKT"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:onClick="showYKTActivity"
+		    style="@style/button"/>
+		<Button android:id="@+id/water_order"
+		    android:text="@string/water_order"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    style="@style/button"/>
+		<Button android:id="@+id/repair"
+		    android:text="@string/repair"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    style="@style/button"/>
+		<Button android:id="@+id/lost_and_find"
+		    android:text="@string/lost_and_find"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    style="@style/button"/>
+	</LinearLayout>
+</ScrollView>

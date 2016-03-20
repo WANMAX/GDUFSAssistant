@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <TextView android:text="@string/student_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    <EditText android:id="@+id/student_number"
+	        android:layout_width="150dip"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+	    <TextView android:text="@string/password"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    <EditText
+	        android:id="@+id/password"
+	        android:layout_width="150dip"
+	        android:layout_height="wrap_content"
+	        android:password="true"
+	        android:inputType="textUri"
+	        android:gravity="center"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center">
+	    <CheckBox android:id="@+id/remenber_check"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/remenber_password"
+		    android:layout_gravity="center_horizontal"/>
+		<CheckBox android:id="@+id/auto_login_check"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/auto_login"
+		    android:layout_gravity="center_horizontal"/>
+	</LinearLayout>
+</LinearLayout>

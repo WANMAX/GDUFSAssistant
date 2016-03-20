@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+		<ProgressBar android:id="@+id/progress"
+        	android:layout_width="match_parent" 
+        	android:layout_height="5dip"
+        	style="?android:attr/progressBarStyleHorizontal"
+        	android:max="100"
+        	android:visibility="gone"
+        	android:progressDrawable="@drawable/progress_bar"/>
+	</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+    	    <LinearLayout 
+		        android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    style="@style/top_button">
+			    <TextView android:text="@string/photo"
+			        style="@style/tag_name"/>
+			    <ImageView android:id="@+id/photo"
+				    style="@style/tag_value"
+					android:scaleType="centerInside"
+			        android:src="@drawable/not_logged_photo"/>
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    style="@style/center_button">
+			    <TextView android:text="@string/name"
+			        style="@style/tag_name"/>
+			    <TextView android:id="@+id/name"
+			        android:text="@string/not_logged2"
+			        style="@style/tag_value"/>
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    style="@style/center_button">
+			    <TextView android:text="@string/student_number"
+			        style="@style/tag_name"/>
+			    <TextView android:id="@+id/student_number"
+			        style="@style/tag_value"/>
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    style="@style/center_button">
+			    <TextView android:text="@string/identity"
+			        style="@style/tag_name"/>
+			    <TextView android:id="@+id/identity"
+			        style="@style/tag_value"/>
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    style="@style/bottom_button">
+			    <TextView android:text="@string/academy"
+			        style="@style/tag_name"/>
+			    <TextView android:id="@+id/academy"
+			        style="@style/tag_value"/>
+		    </LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+    <Button style="@style/vertical_interval"/>
+    <Button android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:onClick="login"
+	    style="@style/button"
+        />
+    <Button android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:visibility="gone"
+        android:onClick="logout"
+	    style="@style/button"
+        />
+</LinearLayout>

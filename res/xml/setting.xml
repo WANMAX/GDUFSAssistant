@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="登录设置" >
+	    <CheckBoxPreference android:defaultValue="true" android:summary="是否显示头像" android:title="显示头像" android:key="display_photo"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="2"
+	    android:orientation="horizontal" >
+	    <TextView android:id="@+id/state"
+	        android:layout_height="match_parent"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        style="@style/left_button"/>
+	    <TextView android:id="@+id/balance"
+	        android:layout_height="match_parent"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        style="@style/right_button"/>
+	</LinearLayout>
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="3"
+	    android:scrollbars="vertical">
+		<LinearLayout 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+	    	android:orientation="vertical" >
+		    <Button android:id="@+id/recharge"
+		        android:text="@string/recharge"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:onClick="showRechargeActivity"
+		        style="@style/top_button"/>
+		    <Button android:id="@+id/today_account"
+		        android:text="@string/today_account"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:onClick="showTodayAccount"
+		        style="@style/center_button"/>
+		    <Button android:id="@+id/history_account"
+		        android:text="@string/history_account"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:onClick="showHistoryAccoun"
+		        style="@style/center_button"/>
+		    <Button android:id="@+id/report_loss"
+		        android:text="@string/report_loss"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:onClick="showReportLossActivity"
+		        style="@style/center_button"/>
+		    <Button android:id="@+id/modify_password"
+		        android:text="@string/modify_password"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:onClick="showModifyPasswordActivity"
+		        style="@style/bottom_button"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
